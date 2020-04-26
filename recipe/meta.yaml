@@ -1,20 +1,20 @@
 {% set name = "metanetx-assets" %}
-{% set version = "0.1.6" %}
+{% set version = "0.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f0d639fd18062e3fd3b77742432146c23534b98cff2b08e30d059bd764141e67
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 4181403b9de165213a8d0849a0adae63b5ced464796c94265eb7d716d9f503df
 
 build:
   noarch: python
   entry_points:
-    - "mnx-assets = metanetx_assets.cli.cli:cli"
+    - mnx-assets = metanetx_assets.cli.cli:cli
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
 
 requirements:
   host:
@@ -45,7 +45,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: "Transform [MetaNetX](https://metanetx.org) components information and load them into SQL storage."
+  summary: Transform [MetaNetX](https://metanetx.org) components information and load them into SQL storage.
   description: |
     The tabular information coming from [MetaNetX](https://metanetx.org)
     requires particular transformations and a particular order of creating
