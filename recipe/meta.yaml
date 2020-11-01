@@ -1,5 +1,5 @@
 {% set name = "metanetx-assets" %}
-{% set version = "0.2.1" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cb285babf4b4d12611fee05375a666fcf74117feaef6edd720b789633bad8992
+  sha256: fd2381c6763dbe3bc0d2dee78a64e08d9905174cbb4a1c25c757c1c1ac7fc7b1
 
 build:
   noarch: python
