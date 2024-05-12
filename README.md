@@ -5,9 +5,11 @@ Home: https://pypi.org/project/metanetx-assets/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metanetx-assets-feedstock/blob/master/LICENSE.txt)
 
 Summary: Transform [MetaNetX](https://metanetx.org) components information and load them into SQL storage.
+
+Development: https://github.com/Midnighter/metanetx-assets
 
 The tabular information coming from [MetaNetX](https://metanetx.org)
 requires particular transformations and a particular order of creating
